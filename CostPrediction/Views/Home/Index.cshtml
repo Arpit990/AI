@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="project_kind" class="form-label">Kind of Project</label>
+            <select id="project_kind" class="form-select">
+                <option selected>--Select--</option>
+                <option>TERTIARY</option>
+                <option>INDUSTRIAL</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="project_type" class="form-label">Project Type</label>
+            <select id="project_type" class="form-select">
+                <option selected>--Select--</option>
+                <option>CAR PARKS</option>
+                <option>DATA CENTERS</option>
+                <option>LOGISTICS PLATFORM</option>
+                <option>MEDICAL BUILDINGS</option>
+                <option>OFFICE BUILDINGS</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="building_area" class="form-label">Building Area (in square meter)</label>
+            <input type="number" inputmode="numeric" class="form-control" id="building_area">
+        </div>
+
+        <div class="col-md-6">
+            <label for="project_year" class="form-label">Project Year</label>
+            <input type="number" inputmode="numeric" class="form-control" id="project_year">
+        </div>
+
+        <button class="btn btn-outline-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Optional Parameters
+        </button>
+
+        <div class="row collapse" id="collapseExample">
+            <div class="col-md-6 mt-3">
+                <label for="transformers" class="form-label">Number of transformers</label>
+                <input type="number" inputmode="numeric" class="form-control" id="transformers">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="project_year" class="form-label">Transformer power</label>
+                <input type="number" inputmode="numeric" class="form-control" id="project_year">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="building_area" class="form-label">Number of low-voltage general panels</label>
+                <input type="number" inputmode="numeric" class="form-control" id="building_area">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="project_year" class="form-label">Number of low-voltage auxiliary panels</label>
+                <input type="number" inputmode="numeric" class="form-control" id="project_year">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="building_area" class="form-label">Number of inverters</label>
+                <input type="number" inputmode="numeric" class="form-control" id="building_area">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="project_year" class="form-label">Number of capacitors</label>
+                <input type="number" inputmode="numeric" class="form-control" id="project_year">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="building_area" class="form-label">Length of cable trays</label>
+                <input type="number" inputmode="numeric" class="form-control" id="building_area">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="building_area" class="form-label">Number of switches</label>
+                <input type="number" inputmode="numeric" class="form-control" id="building_area">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="project_year" class="form-label">Number of sockets < 32 A </label>
+                <input type="number" inputmode="numeric" class="form-control" id="project_year">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="project_year" class="form-label">Number of sockets > 32 A</label>
+                <input type="number" inputmode="numeric" class="form-control" id="project_year">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="project_year" class="form-label">Number of light fixtures</label>
+                <input type="number" inputmode="numeric" class="form-control" id="project_year">
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <label for="building_area" class="form-label">Number of emergency light fixtures</label>
+                <input type="number" inputmode="numeric" class="form-control" id="building_area">
+            </div>
+        </div>
+
+        <div class="col-12 mx-auto text-center">
+            <button type="submit" class="btn btn-outline-success">Calculate Cost</button>
+        </div>
+    </form>
+</div>
